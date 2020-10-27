@@ -1,0 +1,42 @@
+/* Header */
+.site-header {
+    background-color: #060d13;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    position: relative;
+    height: 80px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(38, 45, 52);
+    color: white;
+}
+
+.sitle-heading {
+    display: flex;
+    width: 280px;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+}
+
+.sitle-heading a,
+.sitle-heading a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sitle-heading p {
+    font-size: 1.5rem;
+}
+
+.sitle-heading a:visited {
+    color: inherit;
+}
+
+.site-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 0.5em;
+}

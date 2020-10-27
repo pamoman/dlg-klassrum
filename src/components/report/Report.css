@@ -1,0 +1,26 @@
+/* Report page */
+.report-heading {
+    padding: 5px;
+    background-color: #060d13;
+}
+
+.report-log {
+    width: 100%;
+}
+
+.report-image {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.report-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.table-heading i {
+    position: relative;
+    top: 7px;
+}

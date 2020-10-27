@@ -1,0 +1,55 @@
+/* Left column */
+.panel {
+    width: 100%;
+}
+
+.admin-panel .controller {
+    height: 270px;
+}
+
+.panel .control-group {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.admin-panel .control-group {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+    background-color: rgb(6, 13, 19);
+}
+
+.panel .controller img.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.panel .controller h2 {
+    margin: 0.5rem;
+}
+
+.panel .control-icon i {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.panel .control-icon i:not(.selected):hover {
+    border-bottom: 2px solid rgb(46, 174, 52);
+}
+
+.panel .control-icon i.selected {
+    border-bottom: 2px solid rgb(14, 125, 255);
+}
+
+/* Main column */
+.admin-default-image {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.admin-default-image img {
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100%;
+}

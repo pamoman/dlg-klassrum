@@ -1,0 +1,9 @@
+/* Main column */
+.classroom-view {
+    width: 900px;
+}
+
+.classroom-view-image img {
+    border: 2px solid black;
+    width: 100%;
+}

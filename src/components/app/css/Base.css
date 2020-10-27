@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #121d26;
+}
+
+a {
+    color: rgb(120, 160, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Controller Tooltip */
+.controller .tooltip {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    will-change: transform;
+}
+
+.controller:hover .tooltip {
+    height: 28px;
+    visibility: visible;
+    transition: all 0.5s 2s ease;
+    will-change: transform;
+}
+
+.controller .tooltip .tooltip-text {
+    padding: 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Table Tooltip */
+.card-row .tooltip {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    will-change: transform;
+}
+
+.card-row tr:hover .tooltip {
+    height: 28px;
+    visibility: visible;
+    transition: all 0.5s 2s ease;
+    will-change: transform;
+}
+
+.card-row .tooltip .tooltip-text {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dropdown {
+    text-align: center;
+    font-weight: bold;
+}
+
+.dropdown.mobile-only {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+i.clickable {
+    border-bottom: 2px solid rgb(255, 255, 255, 0);
+}
+
+i.clickable:not(.icon-text i, .dropdown i):hover,
+i.clickable.icon-text:hover .caption-text {
+    border-bottom: 2px solid rgb(255, 255, 255, 1);
+}
+
+.check-icon {
+    color: green;
+}
+
+main {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.column-heading {
+    width: 100%;
+    background-color: #060d13;
+}
+
+.table-heading {
+    margin-bottom: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.column-heading h1,
+.column-heading h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    flex: 0 0 300px;
+}
+
+.main-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    flex: 4;
+}
+
+.single-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+aside,
+article {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+aside,
+.left-heading {
+    padding-left: 2rem;
+}
+
+article {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.center-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.margin {
+    margin-bottom: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.message {
+    animation: slide-up 0.4s ease;
+    background-color: #060d13;
+    font-size: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    padding: 0.6rem 0.6rem;
+    text-align: center;
+}
+
+.invalid {
+    color: red;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.button {
+    -webkit-appearance: none;
+    width: 12rem;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: rgb(46, 174, 52, 0.7);
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(46, 174, 52, 1);
+}
+
+.button.forgot {
+    font-size: 1rem;
+    background-color: rgb(249, 103, 45, 0.7);
+    color: white;
+}
+
+.button.forgot:hover {
+    background-color: rgb(249, 103, 45, 1);
+}
+
+.toggle-button {
+    width: 8rem;
+    font-size: 1.5rem;
+    padding: 6px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: rgb(55, 69, 82, 0.7);
+    color: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: rgb(55, 69, 82, 1);
+    color: white;
+}
+
+.toggle-button.on {
+    background-color: rgb(46, 174, 52, 0.7);
+    color: white;
+}

@@ -1,0 +1,58 @@
+/* Top column */
+.filter-panel {
+    width: 100%;
+    background-color: rgb(6, 13, 19);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.filter-panel.close {
+    overflow: hidden;
+    max-height: 35px;
+    transition: all 0.5s ease;
+    will-change: transform;
+}
+
+.filter-panel.open {
+    max-height: 500px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    will-change: transform;
+}
+
+.filter-panel .controller h2 {
+    margin: 0;
+}
+
+.filter-panel .control-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-panel .controller .control-icon figure:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.filter-panel .controller .control-icon figure:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.filter-panel .controller .filter-categories {
+    margin: 0 auto;
+}
+
+.filter-panel .control-icon figure {
+    text-align: center;
+    border-bottom: 2px solid rgb(6, 13, 19);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.filter-panel .control-icon figure:not(.selected):hover {
+    border-bottom: 2px solid rgb(46, 174, 52);
+}
+
+.filter-panel .control-icon figure.selected {
+    border-bottom: 2px solid rgb(14, 125, 255);
+}
