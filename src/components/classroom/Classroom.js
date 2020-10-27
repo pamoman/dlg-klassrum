@@ -1,9 +1,9 @@
 /*eslint max-len: ["error", { "code": 300 }]*/
 
 import React, { Component } from 'react';
-import db from '../../models/db.js';
-import icon from '../../models/icon.js';
-import image from '../../models/image.js';
+import db from 'models/db.js';
+import icon from 'models/icon.js';
+import image from 'models/image.js';
 import './Classroom.css';
 
 class Classroom extends Component {

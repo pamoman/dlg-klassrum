@@ -4,9 +4,9 @@
 import React, { Component } from 'react';
 import DatePicker from '../../datepicker/DatePicker.js';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import utils from '../../../models/utils.js';
-import form from '../../../models/form.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import form from 'models/form.js';
 import '../Admin.css';
 
 class DeviceUpdate extends Component {

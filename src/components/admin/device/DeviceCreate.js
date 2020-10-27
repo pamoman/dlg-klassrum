@@ -1,10 +1,10 @@
 /*eslint max-len: ["error", { "code": 300 }]*/
 
 import React, { Component } from 'react';
-import DatePicker from '../../datepicker/DatePicker.js';
+import DatePicker from 'components/datepicker/DatePicker.js';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import utils from '../../../models/utils.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
 import '../Admin.css';
 
 class DeviceCreate extends Component {

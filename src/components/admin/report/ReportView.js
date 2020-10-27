@@ -1,11 +1,11 @@
 /*eslint max-len: ["error", { "code": 300 }]*/
 
 import React, { Component } from 'react';
-import ReportFilterList from '../../report/components/ReportFilterList.js';
+import ReportFilterList from 'components/report/components/ReportFilterList.js';
 import  { withRouter } from 'react-router-dom';
-import icon from '../../../models/icon.js';
+import icon from 'models/icon.js';
 import '../Admin.css';
-import Categories from '../../filter/Categories.js';
+import Categories from 'components/filter/Categories.js';
 
 class ReportView extends Component {
     constructor(props) {

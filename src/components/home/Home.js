@@ -3,14 +3,14 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../models/db.js';
-import utils from '../../models/utils.js';
-import form from '../../models/form.js';
-import image from '../../models/image.js';
-import icon from '../../models/icon.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import form from 'models/form.js';
+import image from 'models/image.js';
+import icon from 'models/icon.js';
 import './Home.css';
-import Categories from '../filter/Categories.js';
-import DeviceCards from '../device/DeviceCards.js';
+import Categories from 'components/filter/Categories.js';
+import DeviceCards from 'components/device/DeviceCards.js';
 
 class Home extends Component {
     constructor(props) {
@@ -101,7 +101,6 @@ class Home extends Component {
         try {
             let classroom = this.state.classroomData[id];
             let name = form.optionName(classroom, this.state.classroomTemplate);
-            let report = () => utils.redirect(this, "/report", { itemGroup: "classroom", itemid: classroom.id });
             let reportList = () => utils.redirect(this, "/report/list", { itemGroup: "classroom", itemid: classroom.id });
 
             this.setState({
@@ -113,7 +112,6 @@ class Home extends Component {
                     building: classroom.building,
                     level: classroom.level,
                     image: classroom.image,
-                    report: icon.get("Build", report),
                     status: icon.reportStatus(reportList, classroom.working)
                 },
                 selected: classroom.id
@@ -233,7 +231,7 @@ class Home extends Component {
                         <DeviceCards
                             onRef={ref => (this.devices = ref)}
                             devices={ this.state.devices }
-                            choice={ ["status", "report", "view"] }
+                            choice={ ["status", "view"] }
                             selection={ this.state.selection }
                         />
                     </article>

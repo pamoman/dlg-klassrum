@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import icon from '../../../models/icon.js';
+import db from 'models/db.js';
+import icon from 'models/icon.js';
 import '../Report.css';
 
 class ReportForm extends Component {

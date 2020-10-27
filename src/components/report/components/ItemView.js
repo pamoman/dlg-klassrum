@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
 import '../Report.css';
-import ClassroomCards from '../../classroom/ClassroomCards.js';
-import DeviceCards from '../../device/DeviceCards.js';
+import ClassroomCards from 'components/classroom/ClassroomCards.js';
+import DeviceCards from 'components/device/DeviceCards.js';
 
 class ItemView extends Component {
     constructor(props) {

@@ -3,9 +3,9 @@
 import React, { Component } from 'react';
 import ReportAdmin from './ReportAdmin';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import icon from '../../../models/icon.js';
-import table from '../../../models/table.js';
+import db from 'models/db.js';
+import icon from 'models/icon.js';
+import table from 'models/table.js';
 import '../Report.css';
 
 class ReportItemList extends Component {

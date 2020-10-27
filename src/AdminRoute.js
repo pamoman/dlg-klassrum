@@ -3,7 +3,7 @@
 import React from "react";
 import ErrorBoundary from './ErrorBoundary.js';
 import { Route, Redirect } from "react-router-dom";
-import { useAuth, useAdmin } from "../auth/auth.js";
+import { useAuth, useAdmin } from "components/auth/auth.js";
 
 function AdminRoute({
     path: path ,

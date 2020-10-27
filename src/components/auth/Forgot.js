@@ -2,8 +2,8 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../models/db.js';
-import utils from '../../models/utils.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
 
 class Forgot extends Component {
     constructor(props) {

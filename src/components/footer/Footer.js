@@ -1,7 +1,7 @@
 /*eslint max-len: ["error", { "code": 120 }]*/
 
 import React, { Component } from 'react';
-import Navbar from '../navbar/Navbar.js';
+import Navbar from 'components/navbar/Navbar.js';
 import './Footer.css';
 
 class Footer extends Component {

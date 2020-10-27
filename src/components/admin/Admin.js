@@ -3,10 +3,10 @@
 
 import React, { Component } from 'react';
 import  {  withRouter } from 'react-router-dom';
-import utils from '../../models/utils.js';
-import icon from '../../models/icon.js';
+import utils from 'models/utils.js';
+import icon from 'models/icon.js';
 import './Admin.css';
-import image from "../../assets/classroom/default.jpg";
+import image from "assets/classroom/default.jpg";
 import ClassroomView from './classroom/ClassroomView.js';
 import ClassroomCreate from './classroom/ClassroomCreate.js';
 import ClassroomUpdate from './classroom/ClassroomUpdate.js';
@@ -17,9 +17,6 @@ import DeviceUpdate from './device/DeviceUpdate.js';
 import DeviceDelete from './device/DeviceDelete.js';
 import AddDevices from './classroom/devices/AddDevices.js';
 import SwapDevices from './classroom/devices/SwapDevices.js';
-import ReportView from './report/ReportView.js';
-import ReportUpdate from './report/ReportUpdate.js';
-import ReportDelete from './report/ReportDelete.js';
 import PersonDelete from './person/PersonDelete.js';
 import PersonLevel from './person/PersonLevel.js';
 
@@ -31,7 +28,6 @@ class Admin extends Component {
         this.classroomView = this.classroomView.bind(this);
         this.deviceView = this.deviceView.bind(this);
         this.classroomDeviceView = this.classroomDeviceView.bind(this);
-        this.reportView = this.reportView.bind(this);
         this.change = this.change.bind(this);
         this.toggleFilter = this.toggleFilter.bind(this);
         this.toggleHover = this.toggleHover.bind(this);
@@ -41,7 +37,6 @@ class Admin extends Component {
                 classroom: "close",
                 device: "close",
                 classroomDevice: "close",
-                report: "close",
                 person: "close"
             },
             image: image,
@@ -102,9 +97,6 @@ class Admin extends Component {
                 break;
             case (selected === "classroom-device"):
                 this.classroomDeviceView(admin, id);
-                break;
-            case (selected === "report"):
-                this.reportView(admin, id);
                 break;
             case (selected === "person"):
                 this.personView(admin, id);
@@ -177,26 +169,6 @@ class Admin extends Component {
         this.change(view, "classroom-device", admin);
     }
 
-    reportView(admin, id = null) {
-        let view;
-
-        switch(true) {
-            case (admin === "view"):
-                view = <ReportView save={this.props.save} restore={this.props.restore } />;
-                break;
-            case (admin === "edit"):
-                view = <ReportUpdate id={id} />;
-                break;
-            case (admin === "delete"):
-                view = <ReportDelete id={id} />;
-                break;
-            default:
-                return;
-        }
-
-        this.change(view, "report", admin, id);
-    }
-
     personView(admin, id = null) {
         let view;
 
@@ -226,9 +198,6 @@ class Admin extends Component {
                 break;
             case (selected === "classroom-device"):
                 title = "Admin Koppla";
-                break;
-            case (selected === "report"):
-                title = "Admin Felanmälningar";
                 break;
             case (selected === "person"):
                 title = "Admin Personer";
@@ -335,26 +304,6 @@ class Admin extends Component {
                                     <div className="control-icon">
                                         { icon.get("Add", () => { utils.redirect(this, "/admin/classroom-device/add") }, selected === "classroom-device" && admin === "add", this.toggleHover, "Connect") }
                                         { icon.get("Swap", () => { utils.redirect(this, "/admin/classroom-device/swap") }, selected === "classroom-device" && admin === "swap", this.toggleHover, "Connect") }
-                                    </div>
-                                    <div className="tooltip">
-                                        <div className="tooltip-text">{ this.state.tooltip ?? <span className="tooltip-placeholder">Välj verktyg ovan</span> }</div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div className={`controller ${ this.state.toggle.report }`}>
-                            <figure className="control-group">
-                                <h2 className="center">Felanmälningar</h2>
-                                <div className="dropdown mobile-only">
-                                    { icon.get(this.state.toggle.report === "close" ? "Drop-down" : "Drop-up", () => this.toggleFilter("report")) }
-                                </div>
-                                { icon.get("Message") }
-                                <figcaption>
-                                    <div className="control-icon">
-                                        { icon.get("View", () => { utils.redirect(this, "/admin/report/view") }, selected === "report" && admin === "view", this.toggleHover, "Report") }
-                                        { icon.get("Edit", () => { utils.redirect(this, "/admin/report/edit") }, selected === "report" && admin === "edit", this.toggleHover, "Report") }
-                                        { icon.get("Delete", () => { utils.redirect(this, "/admin/report/delete") }, selected === "report" && admin === "delete", this.toggleHover, "Report") }
                                     </div>
                                     <div className="tooltip">
                                         <div className="tooltip-text">{ this.state.tooltip ?? <span className="tooltip-placeholder">Välj verktyg ovan</span> }</div>

@@ -1,10 +1,10 @@
 /*eslint max-len: ["error", { "code": 500 }]*/
 
 import React, { Component } from 'react';
-import ReportFilterList from '../report/components/ReportFilterList.js';
-import db from '../../models/db.js';
-import utils from '../../models/utils.js';
-import table from '../../models/table.js';
+import ReportFilterList from 'components/report/components/ReportFilterList.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import table from 'models/table.js';
 import './Me.css';
 
 class Me extends Component {

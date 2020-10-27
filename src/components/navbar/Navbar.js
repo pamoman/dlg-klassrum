@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { AuthContext } from "../auth/auth.js";
+import { AuthContext } from "components/auth/auth.js";
 import PrivateNav from './PrivateNav.js';
 import AdminNav from './AdminNav.js';
 import './Navbar.css';

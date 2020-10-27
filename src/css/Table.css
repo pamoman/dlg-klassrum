@@ -10,6 +10,14 @@ table.results-alt {
     margin-bottom: 2em;
 }
 
+table.results {
+    max-width: 70rem;
+}
+
+table.results-alt {
+    max-width: 50rem;
+}
+
 table.results.narrow {
     font-weight: bold;
     width: 24rem;
@@ -70,9 +78,7 @@ table.results-alt td {
 
 /* Alternative table only */
 table.results-alt tr {
-    height: 5rem;
-    min-height: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 table.results-alt tr:not(:last-child) th {
@@ -86,10 +92,14 @@ table.results-alt tr:not(:last-child) td {
 table.results-alt th {
     width: 30%;
     background-color: black;
+    text-align: left;
+    padding-left: 0.5rem;
 }
 
 table.results-alt td {
     width: 70%;
+    text-align: left;
+    padding-left: 0.5rem;
 }
 
 table.results i,

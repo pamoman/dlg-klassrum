@@ -2,9 +2,9 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../models/db.js';
-import utils from '../../models/utils.js';
-import { AuthContext } from "../auth/auth.js";
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import { AuthContext } from "components/auth/auth.js";
 
 class Login extends Component {
     static contextType = AuthContext;
@@ -54,11 +54,15 @@ class Login extends Component {
                 case (data.email && data.password):
                     person = data.person;
                     token = data.token;
+
                     localStorage.setItem("person", JSON.stringify(person));
                     localStorage.setItem("token", JSON.stringify(token));
+
                     setAuth(true, person.level === "admin");
+
                     if (this.props.location.state) {
                         let lastPage = this.props.location.state.from.pathname;
+
                         return utils.redirect(this, lastPage);
                     } else {
                         return utils.redirect(this, "/");

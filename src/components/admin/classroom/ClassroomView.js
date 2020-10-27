@@ -2,11 +2,11 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import icon from '../../../models/icon.js';
+import db from 'models/db.js';
+import icon from 'models/icon.js';
 import '../Admin.css';
-import Categories from '../../filter/Categories.js';
-import ClassroomCards from '../../classroom/ClassroomCards.js';
+import Categories from 'components/filter/Categories.js';
+import ClassroomCards from 'components/classroom/ClassroomCards.js';
 
 class ClassroomView extends Component {
     constructor(props) {

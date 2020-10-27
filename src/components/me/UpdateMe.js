@@ -2,9 +2,9 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../models/db.js';
-import utils from '../../models/utils.js';
-import form from '../../models/form.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import form from 'models/form.js';
 import './Me.css';
 
 class PersonUpdate extends Component {

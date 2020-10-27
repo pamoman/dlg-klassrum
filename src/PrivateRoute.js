@@ -3,7 +3,7 @@
 import React from "react";
 import ErrorBoundary from './ErrorBoundary.js';
 import { Route, Redirect } from "react-router-dom";
-import { useAuth } from "../auth/auth.js";
+import { useAuth } from "components/auth/auth.js";
 
 function PrivateRoute({
     path: path ,

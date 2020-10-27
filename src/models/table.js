@@ -175,7 +175,7 @@ const table = {
             "action": (w) => <th key="head-action" width={w}>Åtgärdning</th>,
             "solved": (w) => <th key="head-solved" width={w}>Åtgärdat</th>,
             "person": (w) => <th key="head-person" width={w}>Person</th>,
-            "manage": (w) => <th key="head-manage" width={w}>Hantera</th>
+            "manage": (w) => <th key="head-manage" width={w}>Info</th>
         };
 
         return [

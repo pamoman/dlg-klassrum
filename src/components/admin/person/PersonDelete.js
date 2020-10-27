@@ -3,10 +3,10 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import utils from '../../../models/utils.js';
-import form from '../../../models/form.js';
-import { AuthContext } from "../../auth/auth.js";
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import form from 'models/form.js';
+import { AuthContext } from "components/auth/auth.js";
 import '../Admin.css';
 
 class PersonDelete extends Component {

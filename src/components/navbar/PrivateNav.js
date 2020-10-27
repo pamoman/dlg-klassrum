@@ -2,7 +2,7 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useAuth } from "../auth/auth.js";
+import { useAuth } from "components/auth/auth.js";
 
 function PrivateNav({
     to: to ,

@@ -2,11 +2,11 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import icon from '../../../models/icon.js';
+import db from 'models/db.js';
+import icon from 'models/icon.js';
 import '../Admin.css';
-import Categories from '../../filter/Categories.js';
-import DeviceCards from '../../device/DeviceCards.js';
+import Categories from 'components/filter/Categories.js';
+import DeviceCards from 'components/device/DeviceCards.js';
 
 class DeviceView extends Component {
     constructor(props) {

@@ -70,7 +70,7 @@ select.form-input {
 	-webkit-appearance: none;
 	appearance: none;
 	background-color: #fff;
-	background-image: url('../../../assets/img/icons/select.png');
+	background-image: url('../assets/img/icons/select.png');
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
 	background-size: 1em auto, 100%;

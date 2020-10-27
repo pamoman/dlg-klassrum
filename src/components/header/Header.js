@@ -2,9 +2,9 @@
 
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { AuthContext } from "../auth/auth.js";
-import Navbar from '../navbar/Navbar.js';
-import logo from '../../assets/img/classroom.png';
+import { AuthContext } from "components/auth/auth.js";
+import Navbar from 'components/navbar/Navbar.js';
+import logo from 'assets/img/classroom.png';
 import './Header.css';
 
 class Header extends Component {

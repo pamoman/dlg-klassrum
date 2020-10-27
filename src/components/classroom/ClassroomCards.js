@@ -3,9 +3,9 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import utils from '../../models/utils.js';
-import table from '../../models/table.js';
-import icon from '../../models/icon.js';
+import utils from 'models/utils.js';
+import table from 'models/table.js';
+import icon from 'models/icon.js';
 
 class ClassroomCards extends Component {
     constructor(props) {

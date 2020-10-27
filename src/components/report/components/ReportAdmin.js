@@ -1,8 +1,8 @@
 /* eslint-disable no-useless-rename */
 
-import utils from '../../../models/utils.js';
-import icon from '../../../models/icon.js';
-import { useAuth, useAdmin } from "../../auth/auth.js";
+import utils from 'models/utils.js';
+import icon from 'models/icon.js';
+import { useAuth, useAdmin } from "components/auth/auth.js";
 
 function ReportAdmin({
     that: that,
@@ -18,7 +18,8 @@ function ReportAdmin({
         icon.get("View", view)
     ];
 
-    if (isAuth && isAdmin) {
+    /* Not used in this version */
+    /* if (isAuth && isAdmin) {
         let edit = () => utils.redirect(that, `/admin/report/edit/${ id }`, {});
         let del = () => utils.redirect(that, `/admin/report/delete/${ id }`, {});
 
@@ -26,7 +27,7 @@ function ReportAdmin({
             icon.get("Edit", edit),
             icon.get("Delete", del)
         );
-    }
+    } */
 
     return actions;
 }

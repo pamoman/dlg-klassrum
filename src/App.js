@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import Header from '../header/Header.js';
-import Footer from '../footer/Footer.js';
-import Register from '../auth/Register.js';
-import Login from '../auth/Login.js';
-import Forgot from '../auth/Forgot.js';
-import Reset from '../auth/Reset.js';
-import Home from '../home/Home.js';
-import Me from '../me/Me.js';
-import UpdateMe from '../me/UpdateMe.js';
-import Classroom from '../classroom/Classroom.js';
-import Device from '../device/Device.js';
-import Report from '../report/Report.js';
-import ReportListView from '../report/ReportListView.js';
-import ReportPageView from '../report/ReportPageView.js';
-import Admin from '../admin/Admin.js';
+import Header from 'components/header/Header.js';
+import Footer from 'components/footer/Footer.js';
+import Register from 'components/auth/Register.js';
+import Login from 'components/auth/Login.js';
+import Forgot from 'components/auth/Forgot.js';
+import Reset from 'components/auth/Reset.js';
+import Home from 'components/home/Home.js';
+import Me from 'components/me/Me.js';
+import UpdateMe from 'components/me/UpdateMe.js';
+import Classroom from 'components/classroom/Classroom.js';
+import Device from 'components/device/Device.js';
+import Report from 'components/report/Report.js';
+import ReportListView from 'components/report/ReportListView.js';
+import ReportPageView from 'components/report/ReportPageView.js';
+import Admin from 'components/admin/Admin.js';
 import PublicRoute from './PublicRoute.js';
 import PrivateRoute from './PrivateRoute.js';
 import AdminRoute from './AdminRoute.js';
-import { AuthContext, AdminContext, getAuth, isAdmin } from "../auth/auth.js";
+import { AuthContext, AdminContext, getAuth, isAdmin } from "components/auth/auth.js";
 import './App.css';
 
 class App extends Component {

@@ -2,10 +2,10 @@
 
 import React, { Component } from 'react';
 import  { withRouter } from 'react-router-dom';
-import db from '../../../models/db.js';
-import utils from '../../../models/utils.js';
-import icon from '../../../models/icon.js';
-import table from '../../../models/table.js';
+import db from 'models/db.js';
+import utils from 'models/utils.js';
+import icon from 'models/icon.js';
+import table from 'models/table.js';
 
 class ReportFilterList extends Component {
     constructor(props) {

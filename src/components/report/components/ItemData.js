@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-rename */
-import db from '../../../models/db.js';
+import db from 'models/db.js';
 
 function ItemData(itemGroup, itemid) {
     let res;

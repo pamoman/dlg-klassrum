@@ -55,11 +55,6 @@ class ReportPageView extends Component {
                     <ReportView
                         id={ this.state.id }
                     />
-
-                    <ReportItemList
-                        itemGroup={ this.state.itemGroup }
-                        itemid={ this.state.itemData.id }
-                    />
                 </article>
             </div>
         );

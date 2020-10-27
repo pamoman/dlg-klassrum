@@ -1,4 +1,4 @@
-import db from '../../models/db.js';
+import db from 'models/db.js';
 import { createContext, useContext } from 'react';
 
 export const AuthContext = createContext();

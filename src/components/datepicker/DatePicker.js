@@ -1,7 +1,7 @@
 /*eslint max-len: ["error", { "code": 150 }]*/
 
 import React, { Component } from 'react';
-import utils from '../../models/utils.js';
+import utils from 'models/utils.js';
 import './DatePicker.css';
 
 class DatePicker extends Component {

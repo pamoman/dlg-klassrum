@@ -2,9 +2,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 
 import React, { Component } from 'react';
-import { AdminContext } from "../auth/auth.js";
-import db from '../../models/db.js';
-import icon from '../../models/icon.js';
+import { AdminContext } from "components/auth/auth.js";
+import db from 'models/db.js';
+import icon from 'models/icon.js';
 import './Device.css';
 
 class Device extends Component {

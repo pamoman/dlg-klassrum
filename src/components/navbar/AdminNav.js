@@ -2,7 +2,7 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useAuth, useAdmin } from "../auth/auth.js";
+import { useAuth, useAdmin } from "components/auth/auth.js";
 
 function AdminNav({
     to: to ,
